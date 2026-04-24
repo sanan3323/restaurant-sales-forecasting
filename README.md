@@ -10,7 +10,7 @@ I rebuilt this from an earlier messy version that had some EDA, an ANOVA, a chi-
 
 Takes the raw transaction-level CSV, rolls it up to daily revenue, runs the usual time-series diagnostics, and compares five models against each other: three baselines (naive, seasonal naive, 7-day moving average) and two ML models (Ridge, Gradient Boosting with lag features). Ends with a 7-day forecast with 90% prediction intervals from quantile regression.
 
-## Results (and the lesson here)
+## Results
 
 On my run, the baselines won. All three of them beat both ML models on holdout MAE, and the plain "tomorrow = today" naive forecast came out on top:
 
